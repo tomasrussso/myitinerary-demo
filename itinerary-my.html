@@ -22,6 +22,11 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css" integrity="sha512-YYS7fyqDxVE/yJ1280i8KjA+nC7wAtv2u/qkulKbdMpmp8DBWX0Wj+HtILsFyvq+fouCwCyr0hasPAz1eBlvwA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.css" integrity="sha512-5StPzJo8hFyTvXfJ31FMB37EXRMVeUg+J3yvUNOJcL83MEMr7VrhZSNsoL3GDmUDBGBBhoTjnJx0Ql7cH9LY7g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/label.min.css" integrity="sha512-bLGTFSFKewLG/ltHL52mMtuviUCuHlohn0410iUawDPbjvAONDt0yZ6vLkXfiFOIS9LxPqknEp2K76gBaMq9Bg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css" integrity="sha512-8Tb+T7SKUFQWOPIQCaLDWWe1K/SY8hvHl7brOH8Nz5z1VT8fnf8B+9neoUzmFY3OzkWMMs3OjrwZALgB1oXFBg==" crossorigin="anonymous">
 </head>
 <body>
     <!-- Menu -->
@@ -93,9 +98,10 @@
                         </div>
                         <div class="row buttons">
                             <div class="col">
-                                <a href="#register" data-bs-toggle="modal" data-bs-target="#register" class="btn btn-primary" title="Gosto deste itinerário"><i class="far fa-heart"></i>Gostar</a>
+                                <a href="./itinerary-edit.html" class="btn btn-primary"><i class="fas fa-pen"></i>Editar</a>
                                 <button onclick="CopyUrlToClipboard()" class="btn btn-secondary"><i class="fas fa-share-alt"></i>Partilhar</button>
                                 <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-sync-alt"></i>Personalizar</a> -->
+                                <a href="#options" class="btn btn-white d-inline-block d-lg-none"><i class="fas fa-bars"></i>Opções</a>
                             </div>
                         </div>
                         <hr>
@@ -112,7 +118,7 @@
                                             <div class="card-body">
                                                 <a href="https://www.google.com/maps/place/Av.+dos+Aliados,+Porto/@41.1483616,-8.6112138,17.88z/data=!4m6!3m5!1s0xd2464e35940fd8f:0x738dcce6546dd210!8m2!3d41.1483096!4d-8.6108148!16s%2Fg%2F1210gshk?entry=ttu" class="link" target="_blank"><h5 class="card-title">Avenida dos Aliados</h5></a>
                                                 <p class="card-text review"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><a href="https://www.google.com/maps/place/Av.+dos+Aliados,+Porto/@41.1483616,-8.6112138,17.88z/data=!4m6!3m5!1s0xd2464e35940fd8f:0x738dcce6546dd210!8m2!3d41.1483096!4d-8.6108148!16s%2Fg%2F1210gshk?entry=ttu" class="link" target="_blank">4,6 no Google</a></p>
-                                                <p class="card-text">Trajeto majestoso conhecido pela arquitetura.</p>
+                                                <p class="card-text">Trajeto majestoso conhecido pela arquitetura</p>
                                             </div>
                                         </div>
                                     </div>
@@ -127,7 +133,7 @@
                                             <div class="card-body">
                                                 <a href="https://www.google.com/maps/place/S%C3%A3o+Bento/@41.1460798,-8.6114263,17z/data=!4m6!3m5!1s0xd2464e4756ff947:0x124f921e49a8773e!8m2!3d41.145492!4d-8.609544!16s%2Fm%2F04cslzm?entry=ttu" class="link" target="_blank"><h5 class="card-title">Estação de São Bento</h5></a>
                                                 <p class="card-text review"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><a href="https://www.google.com/maps/place/S%C3%A3o+Bento/@41.1460798,-8.6114263,17z/data=!4m6!3m5!1s0xd2464e4756ff947:0x124f921e49a8773e!8m2!3d41.145492!4d-8.609544!16s%2Fm%2F04cslzm?entry=ttu" class="link" target="_blank">4,7 no Google</a></p>
-                                                <p class="card-text">Estação do século XIX com azulejos ornados.</p>
+                                                <p class="card-text">Estação do século XIX com azulejos ornados</p>
                                             </div>
                                         </div>
                                     </div>
@@ -150,12 +156,12 @@
                                             <div class="card-body">
                                                 <a href="https://www.google.com/maps/place/Mercado+do+Bolh%C3%A3o/@41.1472905,-8.6075324,16.82z/data=!3m1!5s0xd2464fab1e98dd5:0x2b04eabf20145859!4m6!3m5!1s0xd2464e525d70c15:0xf17622db196e7ce9!8m2!3d41.1487813!4d-8.6073608!16s%2Fg%2F1vgw9xlm?entry=ttu" class="link" target="_blank"><h5 class="card-title">Mercado do Bolhão</h5></a>
                                                 <p class="card-text review"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span><a href="https://www.google.com/maps/place/Mercado+do+Bolh%C3%A3o/@41.1472905,-8.6075324,16.82z/data=!3m1!5s0xd2464fab1e98dd5:0x2b04eabf20145859!4m6!3m5!1s0xd2464e525d70c15:0xf17622db196e7ce9!8m2!3d41.1487813!4d-8.6073608!16s%2Fg%2F1vgw9xlm?entry=ttu" class="link" target="_blank">4,3 no Google</a></p>
-                                                <p class="card-text">Mercado icónico com muitos vendedores.</p>
+                                                <p class="card-text">Mercado icónico com muitos vendedores</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <p>Para o lanche, sugiro o famoso Pastel de Nata na Confeitaria Aquarela, em Santa Catarina.</p>
+                                <p>Para o lanche, não pode faltar o famoso Pastel de Nata.</p>
                                 <div class="image col-12 col-md-6">
                                     <img class="img-fluid" src="./images/natas.jpg" alt="">
                                 </div>
@@ -169,6 +175,7 @@
                                             <div class="card-body">
                                                 <a href="https://www.google.com/maps/place/Yuko+Tavern/@41.1770214,-8.5842999,17.52z/data=!4m6!3m5!1s0xd2464596c3e8d8d:0x93583f8a0479050e!8m2!3d41.1763333!4d-8.5856964!16s%2Fg%2F11b7ft4zc5?entry=ttu" class="link" target="_blank"><h5 class="card-title">Yuko Tavern</h5></a>
                                                 <p class="card-text review"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><a href="https://www.google.com/maps/place/Yuko+Tavern/@41.1770214,-8.5842999,17.52z/data=!4m6!3m5!1s0xd2464596c3e8d8d:0x93583f8a0479050e!8m2!3d41.1763333!4d-8.5856964!16s%2Fg%2F11b7ft4zc5?entry=ttu" class="link" target="_blank">4,5 no Google</a></p>
+                                                <p class="card-text">Restaurante típico</p>
                                                 
                                             </div>
                                         </div>
@@ -248,24 +255,113 @@
         </div>
     </div>
 
-    <div class="modal fade modal-itin-page" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+    <!-- Modal - Trocar titulo -->
+    <div class="modal fade" id="changeTitle" tabindex="-1" aria-labelledby="changeTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row text-center title">
-                        <h1>Ainda não é um Explorador?<br>Registe-se agora!</h1>
-                        <p>Precisa de ter uma conta no MyItinerary para continuar.</p>
+                    <div class="row text-center">
+                        <h1>Alterar o título</h1>
+                        <p>Escolha o título que será apresentado junto do seu itinerário.</p>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-auto">
-                            <a href="./signin.html" class="btn btn-primary">Registar-me</a>
+                                <label for="title" style="margin-bottom: 8px;">Título</label>
+                                <input type="text" placeholder="Escolha o título do itinerário" name="title" id="title" required  value="Fim de Semana na Invicta">
+                                <div class="text-center btns">
+                                    <button type="button" class="btn btn-white cancel" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                                    <button id="btn-submit-title" type="submit" class="btn btn-primary d-inline-flex align-items-center justify-content-center" onclick="SetLoading(this, document.getElementById('title'))">Alterar título</button>
+                                </div>
+                            
                         </div>
                     </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Trocar descricao -->
+    <div class="modal fade" id="changeDescription" tabindex="-1" aria-labelledby="changeDescription" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <div class="row text-center">
-                        <p>Já está registado? <a href="./login.html" class="link">Inicie sessão.</a></p>
+                        <h1>Editar descrição</h1>
+                        <p>Escolha uma descrição que caracterize o seu itinerário.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                                <label for="description" style="margin-bottom: 8px;">Descrição</label>
+                                <textarea cols="26" rows="3" placeholder="Descreva o seu itinerário..." name="description" id="description">O roteiro perfeito para 2 dias na cidade do Porto!</textarea>
+                                <div class="text-center btns">
+                                    <button type="button" class="btn btn-white cancel" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                                    <button id="btn-submit-description" type="submit" class="btn btn-primary d-inline-flex align-items-center justify-content-center" onclick="SetLoading(this)">Editar descrição</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Trocar foto capa -->
+    <div class="modal fade" id="changeWallpaper" tabindex="-1" aria-labelledby="changeWallpaper" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-center">
+                        <h1>Trocar foto de capa</h1>
+                        <p>Selecione a imagem que pretende usar como foto de capa.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                                <label for="wallpaper" style="margin-bottom: 8px;">Foto de capa</label>
+                                <input type="file" name="wallpaper" id="wallpaper" accept="image/*" required>
+                                <div class="text-center btns">
+                                    <button type="button" class="btn btn-white cancel" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                                    <button id="btn-submit-wallpaper" type="submit" class="btn btn-primary d-inline-flex align-items-center justify-content-center" onclick="SetLoading(this, document.getElementById('wallpaper'))">Trocar foto</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Apagar itinerario -->
+    <div class="modal fade" id="deleteItinerary" tabindex="-1" aria-labelledby="deleteItinerary" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-center">
+                        <h1>Apagar este itinerário?</h1>
+                        <p class="mb-0">Está prestes a apagar um itinerário completo!<br>Depois de continuar, não poderá voltar atrás. Pretende prosseguir?</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                                <div class="text-center btns">
+                                    <button type="button" class="btn btn-white cancel" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                                    <button id="btn-submit-delete" type="submit" class="btn btn-danger d-inline-flex align-items-center justify-content-center" onclick="SetLoading(this)">Sim, eliminar o itinerário :(</button>
+                                </div>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -288,5 +384,86 @@
     <script src="./js/jquery/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
+
+    <!-- Modal - Criar itinerário -->
+<div class="modal fade" id="createItinerary" tabindex="-1" aria-labelledby="createItinerary" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row text-center">
+                    <h1>Criar um novo itinerário</h1>
+                    <p>Antes de começar, defina algumas informações básicas sobre o seu itinerário.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                            <label for="title">Título</label> <br>
+                            <input type="text" id="itin-title" name="title" placeholder="Dê um nome ao seu itinerário" onclick="RemoveError(this)" required> <br>
+
+                            <label for="duration">Duração da viagem</label> <br>
+                            <input type="number" id="duration" name="duration" placeholder="Máximo de 30 dias" onclick="RemoveError(this)" required> <br>
+
+                            <label for="locations">Cidades</label> <br>
+                            <select class="ui fluid search dropdown" multiple id="locations" name="locations[]"> 
+                                <option value="">Escolha até 8 cidades</option>
+                                <option value="1">Porto</option>
+                                <option value="2">Lisboa</option>
+                                <option value="3">Braga</option>
+                                <option value="4">Coimbra</option>
+                                <option value="5">Faro</option>
+                                <option value="6">Aveiro</option>
+                                <option value="7">Viana do Castelo</option>
+                                <option value="8">Vila Real</option>
+                                <option value="9">Viseu</option>
+                                <option value="10">Évora</option>
+                                <option value="11">Guarda</option>
+                                <option value="12">Leiria</option>
+                                <option value="13">Santarém</option>
+                                <option value="14">Setúbal</option>
+                                <option value="15">Beja</option>
+                                <option value="16">Castelo Branco</option>
+                                <option value="17">Portalegre</option>
+                                <option value="18">Bragança</option>
+                            </select>
+                            <div class="text-center btns" style="margin-top: 38px;">
+                                <button type="button" class="btn btn-white cancel" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                                <button id="btn-submit" type="submit" class="btn btn-primary d-inline-flex align-items-center justify-content-center" onclick="SetLoading(this, document.getElementById('itin-title'), document.getElementById('duration'))">Começar a criar!</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.js" integrity="sha512-8F/2JIwyPohlMVdqCmXt6A6YQ9X7MK1jHlwBJv2YeZndPs021083S2Z/mu7WZ5g0iTlGDYqelA9gQXGh1F0tUw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.js" integrity="sha512-MCuLP92THkMwq8xkT2cQg5YpF30l3qzJuBRf/KsbQP1czFkRYkr2dSkCHmdJETqVmvIq5Y4AOVE//Su+cH+8QA==" crossorigin="anonymous"></script>
+<script>
+    $('.ui.dropdown').dropdown({
+        maxSelections: 8,
+        message: {
+            count: '{count} selecionados',
+            maxSelections: 'Apenas pode adicionar {maxCount} cidades',
+            noResults: 'Sem resultados'
+        },
+        direction: 'upward'
+    });
+
+    $( "#createItinerary" ).on('shown.bs.modal', function(){
+        width = document.getElementById('duration').offsetWidth;
+        document.querySelector('div.ui.dropdown').setAttribute("style", "width: " + width + "px");
+    });    
+
+    var windowWidth = $(window).width();
+    $(window).on('resize', function() {
+        if ($(this).width() !== windowWidth) {
+            width = document.getElementById('duration').offsetWidth;
+            document.querySelector('div.ui.dropdown').setAttribute("style", "width: " + width + "px");
+        }
+    });
+</script>
 </body>
 </html>
