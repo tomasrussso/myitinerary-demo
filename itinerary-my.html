@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Ultimate Guide to Porto - MyItinerary</title>
+    <title>Fim de semana na Invicta - MyItinerary</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <meta name="author" content="Tomás Russo">
@@ -34,8 +34,28 @@
                 <div class="col-auto options">
                     <nav>
                         <ul>
-                            <li><a href="./signin.html" class="btn btn-link btn-link-black menu-md-hide">Registar-me</a></li>
-                            <li><a href="./login.html" class="btn btn-primary">Iniciar sessão</a></li>
+                            <li class="d-flex align-items-center">
+                                <p class="d-flex d-sm-none"><i class="fas fa-bars"></i></p><p class="d-none d-sm-inline">Tomás Russo</p>
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" title="Opções">
+                                        <img class="profile-pic" src="./images/profile.jpg" alt="Tomás Russo">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#createItinerary" data-bs-toggle="modal" data-bs-target="#createItinerary">Criar um novo itinerário</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
+                                        <li><a class="dropdown-item" href="profile.html">Os meus itinerários</a></li>
+                                        <li><a class="dropdown-item" href="profile.html">Favoritos</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a class="dropdown-item" href="help.html">Ajuda</a></li>
+                                        <li><a class="dropdown-item" href="profile.html">Definições</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <button class="dropdown-item">Terminar sessão</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -44,12 +64,12 @@
     </div>
 
     <div class="itinerary-page">
-        <div class="header" style="background-image: url(./images/background-dark.png), url(./images/porto.jpg);">
+        <div class="header" style="background-image: url(./images/background-dark.png), url(./images/porto5.jpg);">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col">
-                        <h1>The Ultimate Guide to Porto</h1>
-                        <h4><i class="fas fa-calendar-alt" title="Duração"></i>3 dias&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-map-marker-alt" title="Cidades"></i>Porto</h4>
+                        <h1>Fim de semana na Invicta</h1>
+                        <h4><i class="fas fa-users" title="Visibilidade"></i>Público&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt" title="Duração"></i>2 dias&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-map-marker-alt" title="Cidades"></i>Porto</h4>
                     </div>
                 </div>
             </div>
@@ -60,15 +80,15 @@
                     <div class="col-12 col-lg-9 main-content">
                         <div class="row description">
                             <h3>Sobre</h3>
-                            <p>Discover Porto the best way possible.</p>
+                            <p>O roteiro perfeito para 2 dias na cidade do Porto!</p>
                             <!-- <p>Descrição</p> -->
                         </div>
                         <div class="row author align-items-center">
                             <div class="col-auto">
-                                <a href="./profile.html" title="John" class="link"><img src="./images/lisboa2.jpg" alt="John Doe"></a>
+                                <a href="./profile.html" title="Tomás Russo" class="link"><img src="./images/profile.jpg" alt="Tomás Russo"></a>
                             </div>
                             <div class="col-auto author-date">
-                                <p><a href="./profile.html" class="link"><span class="name">John Doe</span></a><i style="font-size: 0.8rem; margin-left: 6px; color: #212529;" class="fas fa-check-circle mt-2" title="Perfil verificado"></i><br>20/06/2023 10:45</p>
+                                <p><a href="./profile.html" class="link"><span class="name">Tomás Russo (Eu)</span></a><i style="font-size: 0.8rem; margin-left: 6px; color: #212529;" class="fas fa-check-circle mt-2" title="Perfil verificado"></i><br>20/06/2023 10:45</p>
                             </div>
                         </div>
                         <div class="row buttons">
@@ -82,7 +102,7 @@
                         <div class="row itinerary">
                             <h4 class="divider" id="divider"><i class="fas fa-chevron-down" id="icon"></i><a onclick="ChangeArrow(this)" class="link" data-bs-toggle="collapse" href="#day-1" role="button" aria-expanded="false" aria-controls="day-1">Dia 1</a></h4>
                             <div class="collapse show" id="day-1">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, repellendus repudiandae quaerat atque ducimus cum? Eveniet facere alias dolores reprehenderit non. Esse voluptate earum, incidunt magnam laboriosam quis ratione error?</p>
+                                <p>Começamos a nossa viagem pela Avenida dos Aliados. Facilmente acessível de metro desde o aeroporto, esta praça emblemática é imagem de marca da cidade.</p>
                                 <div class="card local">
                                     <div class="row">
                                         <div class="col-md-3 align-self-center">
@@ -97,7 +117,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, repellendus repudiandae quaerat atque ducimus cum?</p>
+                                <p>Seguimos depois em direção à Ribeira. Pelo caminho, aproveitamos por visitar a famosa Estação de São Bento.</p>
                                 <div class="card local">
                                     <div class="row">
                                         <div class="col-md-3 align-self-center">
@@ -112,7 +132,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, repellendus repudiandae quaerat atque ducimus cum? Eveniet facere alias dolores reprehenderit non.</p>
+                                <p>Depois de visitada a estação, seguimos até à Ponte Luiz I. Atravessamos para a margem oposta e aproveitamos a vista para a cidade a partir de Vila Nova de Gaia.</p>
                                 <div class="image col-12 col-md-6">
                                     <img class="img-fluid" src="./images/porto4.jpg" alt="">
                                 </div>
@@ -120,17 +140,45 @@
 
                             <h4 class="divider" id="divider"><i class="fas fa-chevron-down" id="icon"></i><a onclick="ChangeArrow(this)" class="link" data-bs-toggle="collapse" href="#day-2" role="button" aria-expanded="false" aria-controls="day-2">Dia 2</a></h4>
                             <div class="collapse show" id="day-2">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, repellendus repudiandae quaerat atque ducimus cum? Eveniet facere alias dolores reprehenderit non. Esse voluptate earum, incidunt magnam laboriosam quis ratione error?</p>
-                            </div>
-
-                            <h4 class="divider" id="divider"><i class="fas fa-chevron-down" id="icon"></i><a onclick="ChangeArrow(this)" class="link" data-bs-toggle="collapse" href="#day-3" role="button" aria-expanded="false" aria-controls="day-3">Dia 3</a></h4>
-                            <div class="collapse show" id="day-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, repellendus repudiandae quaerat atque ducimus cum? Eveniet facere alias dolores reprehenderit non. Esse voluptate earum, incidunt magnam laboriosam quis ratione error?</p>
+                                <p>Depois de recuperados das íngremes ruas da cidade, aproveitamos a manhã para fazer algumas compras na emblemática Rua de Santa Catarina. Lá próximo, sendo também local para compras, está o típico e recentemente renovado Mercado do Bolhão.</p>
+                                <div class="card local">
+                                    <div class="row">
+                                        <div class="col-md-3 align-self-center">
+                                            <a href="https://www.google.com/maps/place/Mercado+do+Bolh%C3%A3o/@41.1472905,-8.6075324,16.82z/data=!3m1!5s0xd2464fab1e98dd5:0x2b04eabf20145859!4m6!3m5!1s0xd2464e525d70c15:0xf17622db196e7ce9!8m2!3d41.1487813!4d-8.6073608!16s%2Fg%2F1vgw9xlm?entry=ttu" target="_blank"><img class="img-fluid" src="./images/bolhao.jpg" alt="Mercado do Bolhão"></a>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <a href="https://www.google.com/maps/place/Mercado+do+Bolh%C3%A3o/@41.1472905,-8.6075324,16.82z/data=!3m1!5s0xd2464fab1e98dd5:0x2b04eabf20145859!4m6!3m5!1s0xd2464e525d70c15:0xf17622db196e7ce9!8m2!3d41.1487813!4d-8.6073608!16s%2Fg%2F1vgw9xlm?entry=ttu" class="link" target="_blank"><h5 class="card-title">Mercado do Bolhão</h5></a>
+                                                <p class="card-text review"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span><a href="https://www.google.com/maps/place/Mercado+do+Bolh%C3%A3o/@41.1472905,-8.6075324,16.82z/data=!3m1!5s0xd2464fab1e98dd5:0x2b04eabf20145859!4m6!3m5!1s0xd2464e525d70c15:0xf17622db196e7ce9!8m2!3d41.1487813!4d-8.6073608!16s%2Fg%2F1vgw9xlm?entry=ttu" class="link" target="_blank">4,3 no Google</a></p>
+                                                <p class="card-text">Mercado icónico com muitos vendedores.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Para o lanche, sugiro o famoso Pastel de Nata na Confeitaria Aquarela, em Santa Catarina.</p>
+                                <div class="image col-12 col-md-6">
+                                    <img class="img-fluid" src="./images/natas.jpg" alt="">
+                                </div>
+                                <p>Terminamos o dia com uma típica iguaria portuense, a famosa Francesinha na Taberna Yuko.</p>
+                                <div class="card local">
+                                    <div class="row">
+                                        <div class="col-md-3 align-self-center">
+                                            <a href="https://www.google.com/maps/place/Yuko+Tavern/@41.1770214,-8.5842999,17.52z/data=!4m6!3m5!1s0xd2464596c3e8d8d:0x93583f8a0479050e!8m2!3d41.1763333!4d-8.5856964!16s%2Fg%2F11b7ft4zc5?entry=ttu" target="_blank"><img class="img-fluid" src="./images/yuko.jpg" alt="Yuko Tavern"></a>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <a href="https://www.google.com/maps/place/Yuko+Tavern/@41.1770214,-8.5842999,17.52z/data=!4m6!3m5!1s0xd2464596c3e8d8d:0x93583f8a0479050e!8m2!3d41.1763333!4d-8.5856964!16s%2Fg%2F11b7ft4zc5?entry=ttu" class="link" target="_blank"><h5 class="card-title">Yuko Tavern</h5></a>
+                                                <p class="card-text review"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><a href="https://www.google.com/maps/place/Yuko+Tavern/@41.1770214,-8.5842999,17.52z/data=!4m6!3m5!1s0xd2464596c3e8d8d:0x93583f8a0479050e!8m2!3d41.1763333!4d-8.5856964!16s%2Fg%2F11b7ft4zc5?entry=ttu" class="link" target="_blank">4,5 no Google</a></p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <hr class="d-block d-lg-none">
                     </div>
-                    <div class="col-12 col-lg-3 itin-explore">
+                    <div class="col-12 col-lg-3 itin-explore" id="options">
                         <!-- INICIO DO ANUNCIO -->
                         <!-- <div class="row mb-4 mt-2 mt-lg-0">
                             <img src="./images/image.jpg" alt="" class="img-fluid">
@@ -138,63 +186,16 @@
                         </div> -->
                         <!-- FIM DO ANUNCIO -->
                         <div class="row">
-                            <h3>Para ver a seguir...</h3>
+                            <h3>Opções</h3>
                         </div>
-                        <div class="row itin-cards">
-                            
-                            <div class="col-12 col-md-6 col-lg-12">
-                                <div class="card">
-                                    <!-- Link para itinerário -->
-                                    <a href="./itinerary-my.html" class="a-card" title="Fim de semana na Invicta"> 
-                                        <div class="card-img-top" style="background-image: url('./images/porto5.jpg');"></div>
-                                    </a>
-                                    <div class="card-img-overlay d-flex justify-content-end">
-                                        <button class="btn shadow-none" title="Gosto deste itinerário" data-bs-toggle="modal" data-bs-target="#register"><i class="fas fa-heart"></i></button>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="info card-text">
-                                            <div class="location">PORTO</div>
-                                            <div class="duration">&nbsp;&middot;&nbsp;2 DIAS</div>
-                                        </div>
-                                        <!-- Link para itinerário -->
-                                        <a href="./itinerary-my.html" class="a-card" title="Fim de semana na Invicta"> 
-                                            <h5 class="card-title">Fim de semana na Invicta</h5>
-                                        </a>
-                                        <div class="author card-text">
-                                            <!-- Link para perfil -->
-                                            <div class="author-name"><a href="./profile.html" class="a-card" title="Tomás Russo">Tomás Russo</a><i style="font-size: 0.75rem; margin-left: 5px; margin-right: 2px !important; color: #212529;" class="fas fa-check-circle" title="Perfil verificado"></i></div>
-                                            <div class="date">&nbsp;&middot;&nbsp;Há 6 horas</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-12">
-                                <div class="card">
-                                    <!-- Link para itinerário -->
-                                    <a href="./itinerary.html" class="a-card" title="Roteiro pelas Marisqueiras de Matosinhos"> 
-                                        <div class="card-img-top" style="background-image: url('./images/matosinhos2.jpg')"></div>
-                                    </a>
-                                    <div class="card-img-overlay d-flex justify-content-end">
-                                        <button class="btn shadow-none" title="Gosto deste itinerário" data-bs-toggle="modal" data-bs-target="#register"><i class="fas fa-heart"></i></button>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="info card-text">
-                                            <div class="location">MATOSINHOS</div>
-                                            <div class="duration">&nbsp;&middot;&nbsp;1 DIA</div>
-                                        </div>
-                                        <!-- Link para itinerário -->
-                                        <a href="./itinerary.html" class="a-card" title="Roteiro pelas Marisqueiras de Matosinhos"> 
-                                            <h5 class="card-title">Roteiro pelas Marisqueiras de Matosinhos</h5>
-                                        </a>
-                                        <div class="author card-text">
-                                            <!-- Link para perfil -->
-                                            <div class="author-name"><a href="./profile.html" class="a-card" title="Tomás Russo">Tomás Russo</a><i style="font-size: 0.75rem; margin-left: 5px; margin-right: 2px !important; color: #212529;" class="fas fa-check-circle" title="Perfil verificado"></i></div>
-                                            <div class="date">&nbsp;&middot;&nbsp;Há 12 dias</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="row options-menu" style="margin-bottom: 18px;">
+                            <ul>
+                                <a href="#changeTitle" data-bs-toggle="modal" data-bs-target="#changeTitle" class="option"><li><i class="fas fa-edit"></i>Alterar o título</li></a>
+                                <a href="#changeDescription" data-bs-toggle="modal" data-bs-target="#changeDescription" class="option"><li><i class="fas fa-align-left"></i>Editar a descrição</li></a>
+                                <a href="#changeWallpaper" data-bs-toggle="modal" data-bs-target="#changeWallpaper" class="option"><li><i class="fas fa-image"></i>Trocar foto de capa</li></a>
+                                <button type="submit" class="btn option shadow-none"><li class="mt-3 text-start"><i class="fas fa-lock"></i>Tornar privado</li></button>
+                                <a href="#deleteItinerary" data-bs-toggle="modal" data-bs-target="#deleteItinerary" class="option"><li class="mt-3 del"><i class="fas fa-trash-alt"></i>Eliminar o itinerário</li></a>
+                            </ul>
                         </div>
                     </div>
                 </div>
